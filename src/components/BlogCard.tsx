@@ -9,13 +9,13 @@ const BlogCard = () => {
 				className="sm:w-full md:w-[320px]"
 			/>
 			<div className="mt-6 md:mt-0 flex flex-col gap-3">
-				<span className="text-[#6941C6] text-sm">
+				<span className="text-[#6941C6] text-sm font-semibold">
 					Saturday, 1 Jan 2023
 				</span>
-				<h1 className="font-semibold text-2xl">
+				<h1 className="font-semibold text-2xl dark:text-white">
 					UX Review presentations
 				</h1>
-				<p className="text-[#667085] text-sm">
+				<p className="text-sm text-[#667085] dark:text-[#C0C5D0]">
 					How do you create compelling presentations that wow your
 					colleagues and impress your managers?
 				</p>

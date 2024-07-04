@@ -8,17 +8,21 @@ import About from "./pages/About.tsx";
 import Newsletter from "./pages/Newsletter.tsx";
 import Root from "./pages/Root.tsx";
 
+import { DarkThemeContextProvider } from "./context/darkModeContext.tsx";
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
 		<Router>
-			<Routes>
-				<Route path="/" element={<Root />}>
-					<Route index element={<Home />} />
-					<Route path="about" element={<About />} />
-					<Route path="projects" element={<Projects />} />
-					<Route path="newsletter" element={<Newsletter />} />
-				</Route>
-			</Routes>
+			<DarkThemeContextProvider>
+				<Routes>
+					<Route path="/" element={<Root />}>
+						<Route index element={<Home />} />
+						<Route path="about" element={<About />} />
+						<Route path="projects" element={<Projects />} />
+						<Route path="newsletter" element={<Newsletter />} />
+					</Route>
+				</Routes>
+			</DarkThemeContextProvider>
 		</Router>
 	</React.StrictMode>
 );

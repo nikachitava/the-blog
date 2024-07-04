@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../context/darkModeContext";
+
 interface ICategoryButtonProps {
 	category: string;
 }
 
 const CategoryButton: React.FC<ICategoryButtonProps> = ({ category }) => {
+	const { isDarkMode } = useContext(DarkModeContext);
 	const checkCategoryButtonColor = (category: string) => {
 		switch (category) {
 			case "Design":
@@ -46,9 +50,9 @@ const CategoryButton: React.FC<ICategoryButtonProps> = ({ category }) => {
 		<div
 			style={{
 				color: categoryButtonColor,
-				backgroundColor: buttonBackground,
+				backgroundColor: isDarkMode ? "#FDF2FA" : buttonBackground,
 			}}
-			className="cursor-pointer rounded-md bg-opacity-25 py-1 px-4 text-sm"
+			className="cursor-pointer rounded-md bg-opacity-25 py-1 px-4 text-sm dark:bg-[#FDF2FA]"
 		>
 			{category}
 		</div>
