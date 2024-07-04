@@ -3,7 +3,7 @@ import BlogCard from "../components/BlogCard";
 const Home = () => {
 	return (
 		<div className="">
-			<div className="flex justify-between  gap-1 font-bold text-[88px] md:text-[160px] lg:text-[244px] text-[#1A1A1A]">
+			<div className="border-y-2 mb-12 flex justify-between  gap-1 font-bold text-[88px] md:text-[160px] lg:text-[244px] text-[#1A1A1A]">
 				<span>THE</span>
 				<span>BLOG</span>
 			</div>
