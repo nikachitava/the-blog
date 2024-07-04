@@ -6,7 +6,7 @@ import { FaRegMoon } from "react-icons/fa";
 
 const Navbar = () => {
 	return (
-		<div className="h-[72px] py-5 relative">
+		<div className="h-20 py-5 relative">
 			<div className="flex justify-between items-center">
 				<Link to={"/"}>
 					<h1 className="font-semibold text-xl">Your Name</h1>
