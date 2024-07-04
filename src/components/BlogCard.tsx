@@ -1,3 +1,5 @@
+import CategoryButton from "./CategoryButton";
+
 const BlogCard = () => {
 	return (
 		<div className="md:flex md:items-start md:gap-6">
@@ -13,14 +15,14 @@ const BlogCard = () => {
 				<h1 className="font-semibold text-2xl">
 					UX Review presentations
 				</h1>
-				<p className="text-[#667085]">
+				<p className="text-[#667085] text-sm">
 					How do you create compelling presentations that wow your
 					colleagues and impress your managers?
 				</p>
-				<div className="flex items-center gap-2">
-					<div>Design</div>
-					<div>Research</div>
-					<div>Presentation</div>
+				<div className="flex items-center flex-wrap gap-2">
+					<CategoryButton category={"Design"} />
+					<CategoryButton category={"Software Development"} />
+					<CategoryButton category={"Tools"} />
 				</div>
 			</div>
 		</div>

@@ -9,7 +9,7 @@ const Home = () => {
 			</div>
 			<h1 className="mb-8">Recent blog posts</h1>
 
-			<div className="grid grid-cols-1 gap-8 mb-10">
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-14 mb-10">
 				<BlogCard />
 				<BlogCard />
 				<BlogCard />
