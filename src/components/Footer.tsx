@@ -1,7 +1,7 @@
 const Footer = () => {
 	return (
-		<div className="h-20 py-5">
-			<ul className="md:flex items-center gap-4 text-center">
+		<div className="md:h-20 py-5">
+			<ul className="md:flex items-center gap-4 text-center dark:text-white">
 				<li>(c) 2023</li>
 				<li>Github</li>
 				<li>LinkedIn</li>

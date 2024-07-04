@@ -10,3 +10,15 @@
     box-sizing: border-box;
     font-family: 'Inter';
 }
+
+.grid-areas {
+    grid-template-areas: 
+      'one one two' 
+      'one one third' 
+      'forth forth forth';
+}
+
+.area-one { grid-area: one; }
+.area-two { grid-area: two; }
+.area-third { grid-area: third; }
+.area-forth { grid-area: forth; }
