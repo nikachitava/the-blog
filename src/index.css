@@ -11,14 +11,6 @@
     font-family: 'Inter';
 }
 
-.grid-areas {
-    grid-template-areas: 
-      'one one two' 
-      'one one third' 
-      'forth forth forth';
+.transition-height {
+	transition: height 0.5s ease-in-out;
 }
-
-.area-one { grid-area: one; }
-.area-two { grid-area: two; }
-.area-third { grid-area: third; }
-.area-forth { grid-area: forth; }
